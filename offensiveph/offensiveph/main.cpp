@@ -78,6 +78,7 @@ int wmain(int argc, wchar_t* argv[]) {
 
 	Cleanup:
 	KphUninstall(lpServiceName);
+	Sleep(5000);
 	DeleteFile(lpFilePath);
 	printf("\n[*] Service and file are removed");
 	return status;
